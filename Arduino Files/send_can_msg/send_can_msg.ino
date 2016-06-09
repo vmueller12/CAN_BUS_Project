@@ -24,9 +24,23 @@ START_INIT:
     }
 }
 
-unsigned char stmp[8] = {0, 100, 200, 300, 4, 5, 6, 7};
+// Function to override a value
+void func(unsigned char *ptr, int sen){
+  // change the value on the 4rd locaion
+  *(ptr + 3) = sen;
+  }
+
+// CAN Bus 8 Byte Data Message
+unsigned char stmp[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+
 void loop()
 {
+    // Reading value of potentiometer
+    int sen = analogRead(A0);
+    // Value mapping
+    int newValue = map(sen, 0,1023,0,120);
+    //Calling function to override Data Message
+    func(stmp, newValue);
     // send data:  id = 0x280, standrad flame, data len = 8, stmp: data buf
     CAN.sendMsgBuf(0x280, 0, 8, stmp);
     delay(100);                       // send data per 100ms
