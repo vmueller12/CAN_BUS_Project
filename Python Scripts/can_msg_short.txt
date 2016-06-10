@@ -1,0 +1,11 @@
+		CAN.sendMsgBuf(0x270, 0, 8, stmp);
+		CAN.sendMsgBuf(0x271, 0, 8, stmp);
+		CAN.sendMsgBuf(0x272, 0, 8, stmp);
+		CAN.sendMsgBuf(0x273, 0, 8, stmp);
+		CAN.sendMsgBuf(0x274, 0, 8, stmp);
+		CAN.sendMsgBuf(0x275, 0, 8, stmp);
+		CAN.sendMsgBuf(0x276, 0, 8, stmp);
+		CAN.sendMsgBuf(0x277, 0, 8, stmp);
+		CAN.sendMsgBuf(0x278, 0, 8, stmp);
+		CAN.sendMsgBuf(0x279, 0, 8, stmp);
+		CAN.sendMsgBuf(0x280, 0, 8, stmp);

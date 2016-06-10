@@ -1,0 +1,41 @@
+switch(i){
+
+	case 275:
+		Serial.println("Thats CAN ID 0x275");
+		CAN.sendMsgBuf(0x275, 0, 8, stmp);
+		break;
+
+	case 276:
+		Serial.println("Thats CAN ID 0x276");
+		CAN.sendMsgBuf(0x276, 0, 8, stmp);
+		break;
+
+	case 277:
+		Serial.println("Thats CAN ID 0x277");
+		CAN.sendMsgBuf(0x277, 0, 8, stmp);
+		break;
+
+	case 278:
+		Serial.println("Thats CAN ID 0x278");
+		CAN.sendMsgBuf(0x278, 0, 8, stmp);
+		break;
+
+	case 279:
+		Serial.println("Thats CAN ID 0x279");
+		CAN.sendMsgBuf(0x279, 0, 8, stmp);
+		break;
+
+	case 280:
+		Serial.println("Thats CAN ID 0x280");
+		CAN.sendMsgBuf(0x280, 0, 8, stmp);
+		break;
+
+	case 281:
+		Serial.println("Thats CAN ID 0x281");
+		CAN.sendMsgBuf(0x281, 0, 8, stmp);
+		break;
+
+	default:
+		break;
+
+}
